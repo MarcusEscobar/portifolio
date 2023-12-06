@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-color: gray;
+}
+
+header{
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.navbar{
+    display: flex;
+}
+
+.navbar a{
+    color: red;
+    margin: 10px;
+}
