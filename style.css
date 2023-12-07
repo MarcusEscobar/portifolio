@@ -1,27 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+/*Customizações referentes a toda a página*/
 *{
     margin: 0;
     padding: 0;
     text-decoration: none;
     list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Lato', sans-serif;
+}
+::-webkit-scrollbar {
+    background-color: #140351;
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(13, 13, 13);
+    border-radius: 4px;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+p{
+    color: black;
+    font-size: 20px;
+}
+.info_background{
+    background: linear-gradient(0deg,rgba(66,22,220,1)  0%,rgba(0,0,0,1) 100%);
 }
 
-body{
-    background-color: white;
-}
-
+/*Barra de navegação*/
 header{
+    width: 100vw;
+    height: 10vh;
     background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0px 1px 20px 4px rgb(61, 59, 59);
+}
+
+.div_navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 3vw;
 }
 
 .navbar{
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .navbar a{
-    color: red;
-    margin: 10px;
+    color: black;
+    margin-left: 2vw;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.div_logo{
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3vw;
+}
+.logo{
+    margin-top: 25%;
+}
+.logo p{
+    font-size: 35px;
+    font-family: 'Fjalla One', sans-serif;
+    margin-top: -14px;
+    font-style: italic;
+
+}
+
+
+.home{
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(66,22,220,1) 100%);
+}
+.container_Home{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container_Home img{
+    width: 45%;
+    border-radius: 25%;
+}
+.container_Home h1{
+    font-size: 50px;
+    color: white;
+    font-family: 'Fjalla One', sans-serif;
+
+}
+
+
+/*Sobre mim*/
+.container_aboutMe{
+    height: 65vh;
+    width: 80vw;
+    background-color: white;
+    margin-top: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    box-shadow: rgba(1, 65, 130, 0.741) 6px 6px 25px;
+}
+.container_aboutMe p{
+    width: 30vw;
+    height: 100%;
+    font-size: 30px;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align:start;
+}
+#img2{
+    width: 30%;
+    border-radius: 50%;
+    margin-left: 10px;
+    border: 5px solid rgb(21, 21, 89);
+    box-shadow: rgba(1, 65, 130, 0.741) 3px 3px 25px;
+}
+#div_p_aboutMe{
+    display: flex;
+    flex-direction: column;
+}
+
+/*Skills*/
+.container_skills{
+    width: 60vw;
+    height: 70vh;
+    background-color: white;
+    margin-top: 5vh;
+    border-radius: 20px;
+    box-shadow: rgba(1, 65, 130, 0.741) 6px 6px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.div_Skills{
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 20px;
+}
+.skill{
+    width: 10vw;
+    height: 20vh;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+}
+.container_skills h2{
+    margin: 30px;
 }
