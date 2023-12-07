@@ -67,7 +67,11 @@ header{
     font-size: 20px;
     font-weight: bold;
 }
-
+.navbar a:hover{
+    color: #1a0467;
+    text-shadow: rgba(1, 65, 130, 0.741) 6px 6px 25px;;
+    
+}
 .div_logo{
     width: 50px;
     display: flex;
@@ -138,7 +142,7 @@ header{
     border-radius: 50%;
     margin-left: 10px;
     border: 10px solid rgb(255, 255, 255);
-    box-shadow: rgba(1, 65, 130, 0.741) 3px 3px 25px;
+    box-shadow: rgba(17, 14, 193, 0.427) 0px 5px 20px;
 }
 #div_p_aboutMe{
     display: flex;
@@ -233,7 +237,9 @@ header{
         border: 2px solid black;
         border-radius: 50%;
 }
-
+.icons_projetos:hover{
+    box-shadow: rgba(17, 14, 193, 0.427) 0px 5px 20px;
+}
 #projeto_woofo{
     display: flex;
     align-items: center;
@@ -249,14 +255,10 @@ header{
 #dog_icon{
     width: 5vh;
 }
-
 #projeto_ranDog{
     display: flex;
     align-items: center;
     margin-top: 5vh;
-}
-#container_contatos{
-    margin-bottom: 10vh;
 }
 .div_text_project_ranDog{
     width: 50vw;
@@ -273,4 +275,25 @@ header{
 .div_text_project_ranDog h1{
     font-size: 35px;
     font-weight: bold;
+}
+
+/*Contatos*/
+#container_contatos{
+    width: 30vw;
+    height: 30vh;
+    margin-top: 10vh;
+    margin-left: 10vw;
+    align-self: flex-start;
+    margin-bottom: 10vh;
+}
+#container_contatos h1{
+    margin: 20px;
+}
+.icon_contatos{
+    width: 4vw;
+    margin-left: 20px;
+}
+#div_email{
+    display: flex;
+    align-items: center;
 }
