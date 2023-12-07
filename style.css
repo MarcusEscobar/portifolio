@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 
+
 /*Customizações referentes a toda a página*/
 *{
     margin: 0;
@@ -27,6 +28,9 @@ section{
 p{
     color: black;
     font-size: 20px;
+}
+a{
+    color: black;
 }
 .info_background{
     background: linear-gradient(0deg,rgba(66,22,220,1)  0%,rgba(0,0,0,1) 100%);
@@ -82,7 +86,7 @@ header{
 
 }
 
-
+/*Customização home, tela inicial*/
 .home{
     background: rgb(0,0,0);
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(66,22,220,1) 100%);
@@ -103,6 +107,7 @@ header{
     font-family: 'Fjalla One', sans-serif;
 
 }
+/*Padronização dos containers*/
 .container{
     height: 65vh;
     width: 80vw;
@@ -114,17 +119,11 @@ header{
 }
 
 
-/*Sobre mim*/
+/*About Me*/
 #container_aboutMe{
-    height: 65vh;
-    width: 80vw;
-    background-color: white;
-    margin-top: 20vh;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    border-radius: 20px;
-    box-shadow: rgba(1, 65, 130, 0.741) 6px 6px 25px;
    
 }
 #container_aboutMe p{
@@ -138,7 +137,7 @@ header{
     width: 30%;
     border-radius: 50%;
     margin-left: 10px;
-    border: 5px solid rgb(21, 21, 89);
+    border: 10px solid rgb(255, 255, 255);
     box-shadow: rgba(1, 65, 130, 0.741) 3px 3px 25px;
 }
 #div_p_aboutMe{
@@ -188,12 +187,90 @@ header{
     width: 35%;
 }
 
+/*Projetos*/
+#container_projetos{
+    height: 140vh;
+}
 
+.div_img_project{
+    width: 60vw;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(17, 14, 193, 0.427) 0px 5px 20px, rgba(17, 14, 193, 0.427) 0px 5px 5px;
+    margin: 30px;
+    border-radius: 20px;  
+}
+.div_img_project img{
+    object-fit: contain;
+    height: 50vh;
+}
 
+.div_text_project_woofo{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.div_text_project_woofo p{
+    font-size: 25px;
+    margin: 20px 25px 0px 20px;
+}
+.div_text_project_woofo h1{
+    font-size: 35px;
+    font-weight: bold;
+}
 
+.div_links{
+    display: flex;
+    align-self: start;
+    margin: 20px 0px 0px 20px;
+}
+.div_links img{
+        margin: 5px;
+        border: 2px solid black;
+        border-radius: 50%;
+}
 
+#projeto_woofo{
+    display: flex;
+    align-items: center;
+}
+#woofo_icon{
+    background-color: rgb(0, 0, 0);
+    width: 5vh;
+}
+#gitHub_icon{
+    width: 5vh;
+}
 
+#dog_icon{
+    width: 5vh;
+}
 
+#projeto_ranDog{
+    display: flex;
+    align-items: center;
+    margin-top: 5vh;
+}
 #container_contatos{
     margin-bottom: 10vh;
+}
+.div_text_project_ranDog{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    
+}
+.div_text_project_ranDog p{
+    font-size: 25px;
+    margin: 20px 0px 0px 30px;
+}
+.div_text_project_ranDog h1{
+    font-size: 35px;
+    font-weight: bold;
 }
